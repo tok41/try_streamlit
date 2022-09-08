@@ -1,0 +1,10 @@
+
+*.pyc
+*.o
+Untitled*
+.coverage
+
+.pytest_cache/
+.ipynb_checkpoints/
+.cache/
+.DS_Store
