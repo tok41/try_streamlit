@@ -14,3 +14,9 @@ st.markdown('''
 
 [@toichi_t](https://twitter.com/yoichi_t)
 ''')
+
+# *** sidebar
+st.sidebar.title('About')
+st.sidebar.markdown("""
+このAppについて
+""")

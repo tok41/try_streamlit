@@ -2,7 +2,13 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-@st.cache
+st.title("sample page 1")
+
+st.markdown("""
+適当なデータのplotサンプル
+""")
+
+#@st.cache
 def rand_df(r=10, c=5):
     df = pd.DataFrame(
         np.random.randn(r, c),
@@ -11,3 +17,9 @@ def rand_df(r=10, c=5):
 dataframe = rand_df(c=3, r=10)
 
 st.line_chart(dataframe)
+
+# *** sidebar
+st.sidebar.title('page1')
+st.sidebar.markdown("""
+適当なデータのplotの例
+""")
