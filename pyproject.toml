@@ -5,7 +5,7 @@ description = ""
 authors = ["tok41 <hippy.hikky@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = ">=3.9,<3.11"
+python = ">=3.9,<3.9.7 || >3.9.7,<3.11"
 tqdm = "^4.64.0"
 numpy = "^1.22.4"
 pandas = "^1.4.2"
@@ -14,14 +14,17 @@ matplotlib = "^3.5.2"
 scikit-learn = "^1.1.1"
 torch = "^1.12.0"
 seaborn = "^0.11.2"
+streamlit = "^1.12.2"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^4.0.1"
 black = "^22.3.0"
 pytest = "^7.1.2"
-jupyter = "^1.0.0"
-jupyterlab = "^3.4.2"
 debugpy = "^1.6.0"
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^3.4.7"
+jupyter = "^1.0.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-    tok-base:
+    base:
         build:
             context: .
             dockerfile: ./docker/Dockerfile
@@ -10,6 +10,7 @@ services:
             # 公開用のポート, host:container
             - "8066:8888"
             - "55678:5678"
+            - 48501:8501
         volumes:
             # host:container
             - $PWD:/workspace
