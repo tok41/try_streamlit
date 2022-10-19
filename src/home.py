@@ -15,7 +15,5 @@ Multipageについては、下記サイトを参照してください。
 - https://blog.streamlit.io/introducing-multipage-apps/
 ''')
 
-
 # *** sidebar
-st.sidebar.title('これは home のサイドバーだよ')
 st.sidebar.image('asset/neko.png', use_column_width=True)
